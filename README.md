@@ -1,14 +1,13 @@
-# nasscom-vsd
+# Workshop on Digital VLSI SoC design and planning
 
-Digital VLSI SoC Design and Planning
+**Digital VLSI SoC Design and Planning**
 
-It consists of Five day activities done by me. And later the labs 
+***It consists of Five day activities done by me.  
+The workshop has taught me what OpenLane is and how to use it.***
 
 The activities includes as follow:
 
 ## Day 1 - Introduction and Invoking the openlane  
-
-### Introduction
 
 In today’s era, everyone has heard the word chip. Somewhere in the news or on social media.
 The electronics world works on these small chips. To find a chip you need to find a PCB board, which can be found easily around you. For example, Tv, Computer, A.C., Smartphones, and the list goes on. Or simply you can refer to the following image which shows a PCB board Arduino  
@@ -51,8 +50,13 @@ By using docker and flow.tcl the openlane tool is invoked.
 Once the openLane is opened we need to load all the package everytime. By using command package require openlane 0.9
 After that we need to do design setup by providing all the input files. By using command prep -design picorv32a.  
 
+![1](https://github.com/Shank012/nasscom-vsd/assets/163320647/e6242275-4b80-469e-88aa-dd4d0f0d58b7)  
+Flop Ratio,
+
 ![Img9](https://github.com/Shank012/nasscom-vsd/assets/163320647/f5180780-40b7-408a-b122-3177ba5e23bf)  
 These are the commands we used in Day1 to understand the tool and get the basic Idea.
+
+You can get and understand all the openlane commands from this [link](https://armleo-openlane.readthedocs.io/en/merge-window-3/docs/source/openlane_commands.html)  
 
 ---------------------------------------------------------------------------------------------------------------------------
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells.  
@@ -167,3 +171,5 @@ From the report, we can see that the timing slack is met
 ---------------------------------------------------------------------------------------------------------------------------
 
 Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA.
+
+
