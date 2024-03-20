@@ -15,7 +15,7 @@ As seen the Netlist Area is 2x2= 4sq unit, and the total area of the core is 4x4
 So the Utilization Factor becomes 4/16 = 0.25 which is not good. 1 means there is no space for routing and placing additional cells. 
 The aspect ratio is 4/4 = 1  
 
-After running Synthesis, we got the Chip area as 
+After running Synthesis, we got the Chip area as  
 ![3](https://github.com/Shank012/nasscom-vsd/assets/163320647/7c25a8da-e5fa-41ce-a506-2ceddb90e8e0)  
 
 All pre-configured files can be found at the following location:
