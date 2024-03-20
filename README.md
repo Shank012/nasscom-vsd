@@ -104,7 +104,7 @@ As we can in the following image the new inverters are added to the design
 
 ## Day 4 - Timing Analysis  
 
-Setting the commands to solve the negative slack 
+Setting the commands to solve the negative slack  
 ![29](https://github.com/Shank012/nasscom-vsd/assets/163320647/68fb3e4c-16f8-4fea-a6bc-fafce53a0f20)  
 
 As we can see from the results the negative slack is gone and the area of chip is increased.  
