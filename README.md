@@ -6,8 +6,55 @@ It consists of Five day activities done by me. And later the labs
 
 The activities includes as follow:
 
-Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK.
+## Day 1 - Introduction and Invoking the openlane  
 
+### Introduction
+
+In today’s era, everyone has heard the word chip. Somewhere in the news or on social media.
+The electronics world works on these small chips. To find a chip you need to find a PCB board, which can be found easily around you. For example, Tv, Computer, A.C., Smartphones, and the list goes on. Or simply you can refer to the following image which shows a PCB board Arduino  
+![Img1](https://github.com/Shank012/nasscom-vsd/assets/163320647/ac9738ca-055d-4444-9a01-c82e4bad5136)  
+The yellow circled mark is an Integrated circuit. The chip is inside that package.  
+
+![Img2](https://github.com/Shank012/nasscom-vsd/assets/163320647/f12adf2d-b89f-4ae6-9df3-929b444ae8dc)  
+The Size of the package is 7x7 mm. It consists of 48 pins. The package type is QFN (Quad Flat No-leads).  
+There are different packages available such as BGA, SOIC, LGA, QFP, etc. But for our project, we are going to discuss the QFN package.  
+
+![Img3](https://github.com/Shank012/nasscom-vsd/assets/163320647/f8f744a3-1d9e-4f02-8979-1c2086bbf56b)  
+The chip is inside the package. It is connected with the outside world with the help of pads. The pads are the 48pins which are seen in the above figure.  
+
+![img4](https://github.com/Shank012/nasscom-vsd/assets/163320647/fbf6d9ed-1565-4e84-befa-76a80e5f9cb5)  
+A chip consists of a Die, core area, Pads, IPs, Macros, and std cells.  
+
+So the question arises why do we need chips?  
+
+Chips do all the computation work and make our lives easy.
+Let's take an example of a stopwatch.  
+![Img5](https://github.com/Shank012/nasscom-vsd/assets/163320647/9b0a26a8-d142-4f5d-b1bf-29882e4b9236)  
+The Application or software is written in some language such as C, C++, or Java (human language/ coding language).
+The OS (System Software) with the help of a compiler converts those coding statements into Instruction sets which are again converted to Machine language (Binary numbers 0’s or 1’s) with the help of an assembler. 
+The Hardware(chip) will understand the program and will produce the output.
+
+The figure shows the RTL to GDSII Flow,  
+![Img6](https://github.com/Shank012/nasscom-vsd/assets/163320647/46c8b720-58e0-4c23-9969-18560311deac)
+
+1.	**Synthesis:** Converts RTL to a circuit out of components from the standard cell library (SCL)
+2.	**Floor Planning:** Partition the chip die between different system building blocks and place the I/O pads, defining pin locations, macro placements, and power planning by placing Power rings, power straps and power pads.
+3.	**Placement:** Place the cells on the rows and align with the sites by using global and detailed method.
+4.	**CTS(Clock Tree Synthesis):** Create a clock distribution network to deliver the clock to all sequential elements. It is done by using different types of Tree such as H, X, Fishbone etc.
+5.	**Route:** Implement the interconnect using the available metal layers by using global routing(Which generates routing guides) and detailed routing(Uses the routing guide and implements the actual wires).
+6.	**Sign Off:** In this step, we will do physical verification which includes DRC(Design Rule Check), LVS(Layout Vs Schematic), and timing verification which includes STA(Static Timing Analysis).
+
+![Img7](https://github.com/Shank012/nasscom-vsd/assets/163320647/f74e1bd1-07a6-451d-a8a4-beae7654261b)  
+By using docker and flow.tcl the openlane tool is invoked.  
+
+![Img8](https://github.com/Shank012/nasscom-vsd/assets/163320647/9a7413a8-5fb3-44ae-a472-ef7e3b09d006)  
+Once the openLane is opened we need to load all the package everytime. By using command package require openlane 0.9
+After that we need to do design setup by providing all the input files. By using command prep -design picorv32a.  
+
+![Img9](https://github.com/Shank012/nasscom-vsd/assets/163320647/f5180780-40b7-408a-b122-3177ba5e23bf)  
+These are the commands we used in Day1 to understand the tool and get the basic Idea.
+
+---------------------------------------------------------------------------------------------------------------------------
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells.  
 For floorplannning utilization factor needs to be checked. The formula for utilization factor and aspect ratio is given in below image.
 ![2](https://github.com/Shank012/nasscom-vsd/assets/163320647/02e3faab-2e76-41e9-9dd0-62ade089ab60) 
@@ -45,8 +92,7 @@ After using command global_placement, we can see the following image through Mag
 By zooming in we can see the cells as follows:
 ![12](https://github.com/Shank012/nasscom-vsd/assets/163320647/22d6db8f-5be0-4800-982e-dd845716bcc4)  
 
-
-
+----------------------------------------------------------------------------------------------------------------------------
 ## DAY 3 Adding new inverter cell to the library
 
 Get the git files of the inverter from [VSDstdcelldesign git](https://github.com/nickson-jose/vsdstdcelldesign.git)  
@@ -99,9 +145,7 @@ run_synthesis again
 As we can in the following image the new inverters are added to the design  
 ![28](https://github.com/Shank012/nasscom-vsd/assets/163320647/32fbfd57-4c74-4eac-868e-eda9a0bd0b07)  
 
--------------------------------------------------------------------------------------------------------------------
-
-
+---------------------------------------------------------------------------------------------------------------------------
 ## Day 4 - Timing Analysis  
 
 Setting the commands to solve the negative slack  
@@ -120,6 +164,6 @@ Openroad can be invoked in openlane by simply typing openroad. The inputs to ope
 From the report, we can see that the timing slack is met  
 ![33](https://github.com/Shank012/nasscom-vsd/assets/163320647/96c10f59-69e9-419b-bf0d-c80f160031fb)
 
-
+---------------------------------------------------------------------------------------------------------------------------
 
 Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA.
