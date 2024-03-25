@@ -195,7 +195,13 @@ Now by opening the routing.def file in Magic, we can see the final output as,
 ![Routing](https://github.com/Shank012/nasscom-vsd/assets/163320647/840e9045-4344-44b0-9a99-5a056d19d337)  
 
 A zoom in portion of the image, to see the routed tracks.  
-![zoom routing](https://github.com/Shank012/nasscom-vsd/assets/163320647/170c73dd-2d13-4c79-a14a-e7d25373f93c)
+![zoom routing](https://github.com/Shank012/nasscom-vsd/assets/163320647/170c73dd-2d13-4c79-a14a-e7d25373f93c)  
+![routing_zoom)in](https://github.com/Shank012/nasscom-vsd/assets/163320647/79f06055-5a21-45c1-aeb6-d4507de2a4e1)  
+
+The inverter that we added is also routed, perfectly without any DRC's.  
+![Inverter](https://github.com/Shank012/nasscom-vsd/assets/163320647/3b75499f-68b2-416a-b7cd-91cc7e5dfb89)  
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 ## Acknowledgements
