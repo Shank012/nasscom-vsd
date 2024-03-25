@@ -197,8 +197,9 @@ Now by opening the routing.def file in Magic, we can see the final output as,
 A zoom in portion of the image, to see the routed tracks.  
 ![zoom routing](https://github.com/Shank012/nasscom-vsd/assets/163320647/170c73dd-2d13-4c79-a14a-e7d25373f93c)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+## Acknowldgement 
 
-
-
-
+[Kunal Ghosh](https://github.com/kunalg123)  
+[Nickson Jose](https://github.com/nickson-jose/vsdstdcelldesign?tab=readme-ov-file#plugging-custom-lef-to-openlane-flow)
 
