@@ -201,5 +201,5 @@ A zoom in portion of the image, to see the routed tracks.
 ## Acknowldgement 
 
 [Kunal Ghosh](https://github.com/kunalg123)  
-[Nickson Jose](https://github.com/nickson-jose/vsdstdcelldesign?tab=readme-ov-file#plugging-custom-lef-to-openlane-flow)
+[Nickson Jose]((https://github.com/nickson-jose))
 
