@@ -201,5 +201,7 @@ A zoom in portion of the image, to see the routed tracks.
 ## Acknowldgements 
 
 [Kunal Ghosh](https://github.com/kunalg123)  
-[Nickson Jose](https://github.com/nickson-jose)
+[Nickson Jose](https://github.com/nickson-jose)  
+[R Timothy Edwards](https://github.com/RTimothyEdwards)  
+
 
