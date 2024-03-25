@@ -182,11 +182,20 @@ Location for setting parameters for various stages.
 The following image shows the parameters set for routing stage.  
 ![Routing parameters](https://github.com/Shank012/nasscom-vsd/assets/163320647/6af68b90-7ebe-4810-b726-5f0027949979)  
 
-To run routing script, we just need to write the command `run_routing` in OpenLane tool. After the routing is done. we can get the report from the location as shown in the below image.  
+To run routing script, we just need to write the command `run_routing` in OpenLane tool. After the routing is done. we can get the report from the location as shown in the below image. 
 ![Routing report location](https://github.com/Shank012/nasscom-vsd/assets/163320647/d0142f35-69df-4567-95ec-17f8f8a6049f)  
+
+If there are any errors in routing, we can check those error in the DRC report:  
+![DRC error report](https://github.com/Shank012/nasscom-vsd/assets/163320647/c5a8ba31-f558-423f-ba0f-3cbc17206e15)  
 
 Routing def file can be find at the location shown in the below image  
 ![Routin_def file location](https://github.com/Shank012/nasscom-vsd/assets/163320647/64996bd9-e1e6-472c-8552-c01a17743d29)  
+
+Now by opening the routing.def file in Magic, we can see the final output as,  
+![Routing](https://github.com/Shank012/nasscom-vsd/assets/163320647/840e9045-4344-44b0-9a99-5a056d19d337)  
+
+A zoom in portion of the image, to see the routed tracks.  
+![zoom routing](https://github.com/Shank012/nasscom-vsd/assets/163320647/170c73dd-2d13-4c79-a14a-e7d25373f93c)
 
 
 
