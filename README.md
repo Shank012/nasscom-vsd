@@ -95,7 +95,7 @@ These are the commands we used in Day1 to understand the tool and get the basic 
 You can get and understand all the openlane commands from this [link](https://armleo-openlane.readthedocs.io/en/merge-window-3/docs/source/openlane_commands.html)  
 
 ---------------------------------------------------------------------------------------------------------------------------
-## <h2 id="header-2">Day 2 - Good floorplan vs bad floorplan and introduction to library cells</h2>
+## <h1 id="header-1">Day 2 - Good floorplan vs bad floorplan and introduction to library cells</h1>
 For floorplannning utilization factor needs to be checked. The formula for utilization factor and aspect ratio is given in below image.
 ![2](https://github.com/Shank012/nasscom-vsd/assets/163320647/02e3faab-2e76-41e9-9dd0-62ade089ab60) 
 As seen the Netlist Area is 2x2= 4sq unit, and the total area of the core is 4x4 = 16sq unit. 
