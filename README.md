@@ -5,9 +5,45 @@
 ***It consists of Five day activities done by me.  
 The workshop has taught me what OpenLane is and how to use it.***
 
-The activities includes as follow:
+The activities includes:
+<div class="toc">
+  <ul>
+    <li><a href="#header-1">Day 1 - Introduction and Invoking the openlane</a></li>
+  </ul>
+</div>  
 
-## Day 1 - Introduction and Invoking the openlane  
+<div class="toc">
+  <ul>
+    <li><a href="#header-2">Day 2 - Good floorplan vs bad floorplan and introduction to library cells</a></li>
+  </ul>
+</div>  
+
+<div class="toc">
+  <ul>
+    <li><a href="#header-3">DAY 3 - Adding new inverter cell to the library</a></li>
+  </ul>
+</div>  
+
+<div class="toc">
+  <ul>
+    <li><a href="#header-4">Day 4 - Timing Analysis</a></li>
+  </ul>
+</div>  
+
+<div class="toc">
+  <ul>
+    <li><a href="#header-5">Day 5 - Final step - Routing</a></li>
+  </ul>
+</div>  
+
+<div class="toc">
+  <ul>
+    <li><a href="#header-6">Acknowledgements</a></li>
+  </ul>
+</div>  
+
+
+## <h1 id="header-1">Day 1 - Introduction and Invoking the openlane</h1>
 
 In today’s era, everyone has heard the word chip. Somewhere in the news or on social media.
 The electronics world works on these small chips. To find a chip you need to find a PCB board, which can be found easily around you. For example, Tv, Computer, A.C., Smartphones, and the list goes on. Or simply you can refer to the following image which shows a PCB board Arduino  
@@ -59,7 +95,7 @@ These are the commands we used in Day1 to understand the tool and get the basic 
 You can get and understand all the openlane commands from this [link](https://armleo-openlane.readthedocs.io/en/merge-window-3/docs/source/openlane_commands.html)  
 
 ---------------------------------------------------------------------------------------------------------------------------
-## Day 2 - Good floorplan vs bad floorplan and introduction to library cells.  
+## <h2 id="header-2">Day 2 - Good floorplan vs bad floorplan and introduction to library cells</h2>
 For floorplannning utilization factor needs to be checked. The formula for utilization factor and aspect ratio is given in below image.
 ![2](https://github.com/Shank012/nasscom-vsd/assets/163320647/02e3faab-2e76-41e9-9dd0-62ade089ab60) 
 As seen the Netlist Area is 2x2= 4sq unit, and the total area of the core is 4x4 = 16sq unit. 
@@ -97,7 +133,7 @@ By zooming in we can see the cells as follows:
 ![12](https://github.com/Shank012/nasscom-vsd/assets/163320647/22d6db8f-5be0-4800-982e-dd845716bcc4)  
 
 ----------------------------------------------------------------------------------------------------------------------------
-## DAY 3 Adding new inverter cell to the library
+## <h3 id="header-3">DAY 3 - Adding new inverter cell to the library</h3>
 
 Get the git files of the inverter from [VSDstdcelldesign git](https://github.com/nickson-jose/vsdstdcelldesign.git)  
 We can get a detail understanding of the inverter from the repository of [Nickson Jose](https://github.com/nickson-jose/vsdstdcelldesign?tab=readme-ov-file#plugging-custom-lef-to-openlane-flow)  
@@ -150,7 +186,7 @@ As we can in the following image the new inverters are added to the design
 ![28](https://github.com/Shank012/nasscom-vsd/assets/163320647/32fbfd57-4c74-4eac-868e-eda9a0bd0b07)  
 
 ---------------------------------------------------------------------------------------------------------------------------
-## Day 4 - Timing Analysis  
+## <h4 id="header-4">Day 4 - Timing Analysis</h4>  
 
 Setting the commands to solve the negative slack  
 ![29](https://github.com/Shank012/nasscom-vsd/assets/163320647/68fb3e4c-16f8-4fea-a6bc-fafce53a0f20)  
@@ -170,7 +206,7 @@ From the report, we can see that the timing slack is met
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-## Day 5 - Final step - Routing
+## <h5 id="header-5">Day 5 - Final step - Routing</h5>
 
 To check the current def or what was the last def file that we generated. Use the command `echo $::env(CURRENT_DEF)`  
 ![To check the current def](https://github.com/Shank012/nasscom-vsd/assets/163320647/5d826036-2b68-4bdb-a587-22d101ec49b0)
@@ -204,7 +240,7 @@ The inverter that we added is also routed, perfectly without any DRC's.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-## Acknowledgements
+## <h6 id="header-6">Acknowledgements</h6>
 
 [Kunal Ghosh](https://github.com/kunalg123)  
 [Nickson Jose](https://github.com/nickson-jose)  
